@@ -48,3 +48,7 @@ NOTARY_PROFILE=AudIO ./scripts/build.sh
 ```
 
 This notarizes and staples the app, and the resulting zip can be shared.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
