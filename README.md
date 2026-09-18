@@ -2,13 +2,26 @@
 
 A tiny macOS app for switching audio output and input devices from the keyboard.
 
+<p align="center"><img src="docs/picker.png" width="428" alt="The AudI/O picker, with outputs and inputs side by side"></p>
+
 In the picker:
 
-- **← / →** switch between the Outputs and Inputs columns
+- **← / →** switch between the Output and Input columns
 - **↑ / ↓** switch device immediately
 - **Return / Esc** (or clicking elsewhere) closes the picker
-- **⚙︎ / ⌘,** opens settings, where you can rename devices as they appear in the picker
-  (emoji welcome: ⌃⌘Space) and hide devices you never use (the current device is always shown)
+- **⚙︎ / ⌘,** opens settings
+
+## Install
+
+Download `AudIO-<version>.zip` from the [latest release](https://github.com/rorystephenson/audio/releases/latest),
+unzip it and move **AudIO.app** to Applications. It's signed and notarized. Requires macOS 13 or later.
+
+## Settings
+
+Give each device its own emoji and name in the picker, or hide ones you never use (the current device
+is always shown). Settings are remembered per device, including while it's unplugged. ↺ resets a device.
+
+<p align="center"><img src="docs/settings.png" width="560" alt="AudI/O settings: per-device emoji, name and hide options, and the keyboard shortcut"></p>
 
 There are two ways to open the picker:
 
@@ -18,8 +31,6 @@ There are two ways to open the picker:
   then ⌫) and have your tool run `open -a AudIO`. Launching AudI/O then shows the picker, launching it
   again closes it, and it quits once the picker is closed. Use `open -a` rather than running the
   binary inside the app directly, so a second launch reaches the running copy.
-
-Requires macOS 13 or later.
 
 ## Building
 
